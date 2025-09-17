@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>About Us | Website 01</title>
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Roboto', Arial, sans-serif;
+            background: #f6f8fa;
+            color: #222;
+        }
+        header {
+            background: #222;
+            color: #fff;
+            padding: 2rem 0 1rem 0;
+            text-align: center;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+        }
+        nav {
+            background: #0078d7;
+            padding: 0.5rem 0;
+            text-align: center;
+        }
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            margin: 0 1.2rem;
+            font-weight: 500;
+            font-size: 1rem;
+            transition: color 0.2s;
+        }
+        nav a:hover {
+            color: #ffd700;
+        }
+        header h1 {
+            margin: 0;
+            font-size: 2.0rem;
+            font-weight: 700;
+            letter-spacing: 2px;
+        }
+        main {
+            max-width: 800px;
+            margin: 2rem auto;
+            background: #fff;
+            border-radius: 12px;
+            box-shadow: 0 4px 24px rgba(0,0,0,0.07);
+            padding: 2rem 2.5rem;
+        }
+        .about-section {
+            margin-bottom: 2rem;
+        }
+        .about-section h2 {
+            font-size: 1.5rem;
+            color: #0078d7;
+            margin-bottom: 0.5rem;
+        }
+        .about-section p {
+            font-size: 1.1rem;
+            line-height: 1.7;
+            margin: 0;
+        }
+        .team {
+            display: flex;
+            gap: 2rem;
+            flex-wrap: wrap;
+            margin-top: 1.5rem;
+        }
+        .member {
+            background: #f0f4f8;
+            border-radius: 8px;
+            padding: 1rem;
+            flex: 1 1 200px;
+            text-align: center;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+        }
+        .member img {
+            width: 70px;
+            height: 70px;
+            border-radius: 50%;
+            margin-bottom: 0.5rem;
+            object-fit: cover;
+        }
+        .member h3 {
+            margin: 0.5rem 0 0.2rem 0;
+            font-size: 1.1rem;
+            color: #222;
+        }
+        .member p {
+            font-size: 0.95rem;
+            color: #555;
+            margin: 0;
+        }
+        .contact-section {
+            background: #f0f4f8;
+            border-radius: 8px;
+            padding: 1.5rem;
+            margin-bottom: 2rem;
+        }
+        .contact-section h2 {
+            margin-top: 0;
+        }
+        .contact-form {
+            display: flex;
+            flex-direction: column;
+            gap: 1rem;
+            max-width: 400px;
+        }
+        .contact-form input,
+        .contact-form textarea {
+            padding: 0.7rem;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+            font-size: 1rem;
+            font-family: inherit;
+        }
+        .contact-form button {
+            background: #0078d7;
+            color: #fff;
+            border: none;
+            padding: 0.8rem;
+            border-radius: 5px;
+            font-size: 1rem;
+            cursor: pointer;
+            font-weight: 600;
+            transition: background 0.2s;
+        }
+        .contact-form button:hover {
+            background: #005fa3;
+        }
+        .faq-section {
+            margin-bottom: 2rem;
+        }
+        .faq-section h2 {
+            margin-bottom: 0.5rem;
+        }
+        .faq {
+            margin: 0;
+            padding: 0;
+            list-style: none;
+        }
+        .faq li {
+            margin-bottom: 1rem;
+        }
+        .faq-question {
+            font-weight: 600;
+            color: #0078d7;
+            cursor: pointer;
+        }
+        .faq-answer {
+            display: none;
+            margin-top: 0.3rem;
+            color: #444;
+        }
+        @media (max-width: 600px) {
+            main {
+                padding: 1rem;
+            }
+            .team {
+                flex-direction: column;
+                gap: 1rem;
+            }
+            .contact-section {
+                padding: 1rem;
+            }
+        }
+    </style>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            document.querySelectorAll('.faq-question').forEach(function(q) {
+                q.addEventListener('click', function() {
+                    var answer = this.nextElementSibling;
+                    answer.style.display = answer.style.display === 'block' ? 'none' : 'block';
+                });
+            });
+        });
+    </script>
+</head>
+<body>
+    <header>
+        <h1>About Us</h1>
+    </header>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="services.html">Services</a>
+        <a href="contact.html">Contact</a>
+    </nav>
+    <main>
+        <section class="about-section">
+            <h2>Our Story</h2>
+            <p>
+                Welcome to Website 01! We are passionate about creating modern, user-friendly web experiences. Our journey began with a simple idea: to make the web more beautiful and accessible for everyone. Today, we continue to innovate and deliver solutions that empower our users.
+            </p>
+        </section>
+        <section class="about-section">
+            <h2>Our Mission</h2>
+            <p>
+                We strive to deliver high-quality digital products that blend creativity, technology, and usability. Our mission is to help individuals and businesses thrive online by providing reliable, modern, and visually appealing web solutions.
+            </p>
+        </section>
+        <section class="about-section">
+            <h2>Meet the Team</h2>
+            <div class="team">
+                <div class="member">
+                    <img src="https://randomuser.me/api/portraits/men/32.jpg" alt="Team Member">
+                    <h3>Pawan Kumar</h3>
+                    <p>Founder & Lead Developer</p>
+                </div>
+                <div class="member">
+                    <img src="https://randomuser.me/api/portraits/women/44.jpg" alt="Team Member">
+                    <h3>Priya Sharma</h3>
+                    <p>UI/UX Designer</p>
+                </div>
+                <div class="member">
+                    <img src="https://randomuser.me/api/portraits/men/65.jpg" alt="Team Member">
+                    <h3>Rahul Singh</h3>
+                    <p>Frontend Engineer</p>
+                </div>
+            </div>
+        </section>
+        <section class="faq-section">
+            <h2>Frequently Asked Questions</h2>
+            <ul class="faq">
+            <li>
+                <div class="faq-question"></div>
+                <span style="margin-right:8px;">❓</span>What services do you offer?
+                <span class="faq-toggle" style="float:right; color:#0078d7; font-size:1.2rem;">+</span>
+                </div>
+                <div class="faq-answer">We offer web design, development, UI/UX consulting, and digital strategy services.</div>
+            </li>
+            <li>
+                <div class="faq-question">
+                <span style="margin-right:8px;">📧</span>How can I contact your team?
+                <span class="faq-toggle" style="float:right; color:#0078d7; font-size:1.2rem;">+</span>
+                </div>
+                <div class="faq-answer">You can use the contact form below or email us at <a href="mailto:info@website01.com" style="color:#0078d7;text-decoration:underline;">info@website01.com</a>.</div>
+            </li>
+            <li>
+                <div class="faq-question">
+                <span style="margin-right:8px;">🚀</span>Do you work with startups?
+                <span class="faq-toggle" style="float:right; color:#0078d7; font-size:1.2rem;">+</span>
+                </div>
+                <div class="faq-answer">Yes, we love working with startups and small businesses to help them grow online.</div>
+            </li>
+            </ul>
+        </section>
+        <style>
+            header {
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            }
+        </style>
+    </main>
+</body>
+</html>

@@ -1,0 +1,237 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Modern Responsive Website</title>
+    <!-- Bootstrap 5 CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Custom Styles -->
+    <style>
+        :root {
+            --primary: #1e293b;
+            --accent: #38bdf8;
+            --bg-light: #f8fafc;
+            --card-hover: #e0f2fe;
+            --footer-bg: #0f172a;
+            --text-light: #f1f5f9;
+        }
+        body {
+            background: var(--bg-light);
+            color: var(--primary);
+            font-family: 'Segoe UI', 'Roboto', Arial, sans-serif;
+        }
+        .navbar {
+            background: var(--primary);
+        }
+        .navbar-brand, .nav-link {
+            color: var(--text-light) !important;
+            transition: color 0.2s;
+        }
+        .nav-link:hover, .navbar-brand:hover {
+            color: var(--accent) !important;
+        }
+        .hero-section {
+            background: linear-gradient(90deg, var(--primary) 60%, var(--accent) 100%);
+            color: var(--text-light);
+            padding: 80px 0 60px 0;
+            text-align: center;
+        }
+        .hero-section h1 {
+            font-size: 2.8rem;
+            font-weight: 700;
+            margin-bottom: 20px;
+        }
+        .hero-section p {
+            font-size: 1.25rem;
+            margin-bottom: 30px;
+        }
+        .btn-accent {
+            background: var(--accent);
+            color: var(--primary);
+            border: none;
+            font-weight: 600;
+            transition: background 0.2s, color 0.2s;
+        }
+        .btn-accent:hover {
+            background: var(--primary);
+            color: var(--accent);
+            border: 1px solid var(--accent);
+        }
+        .feature-card {
+            border: none;
+            border-radius: 1rem;
+            box-shadow: 0 2px 16px rgba(30,41,59,0.07);
+            transition: transform 0.2s, box-shadow 0.2s, background 0.2s;
+            background: #fff;
+        }
+        .feature-card:hover {
+            transform: translateY(-8px) scale(1.03);
+            box-shadow: 0 6px 24px rgba(56,189,248,0.15);
+            background: var(--card-hover);
+        }
+        .feature-icon {
+            font-size: 2.5rem;
+            color: var(--accent);
+            margin-bottom: 16px;
+        }
+        footer {
+            background: var(--footer-bg);
+            color: var(--text-light);
+            padding: 32px 0 16px 0;
+            text-align: center;
+        }
+        footer a {
+            color: var(--accent);
+            text-decoration: none;
+            transition: color 0.2s;
+        }
+        footer a:hover {
+            color: #fff;
+        }
+    </style>
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark shadow-sm">
+        <div class="container">
+            <a class="navbar-brand fw-bold" href="#">WebCreater</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav" aria-controls="mainNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="mainNav">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                    <li class="nav-item"><a class="nav-link active" href="index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero-section">
+        <div class="container">
+            <h1>Build Your Next Project with Bootstrap 5</h1>
+            <p class="lead">Clean, modern, and responsive layouts for your business or portfolio. Experience the best UI patterns and design clarity.</p>
+            <a href="about.html" class="btn btn-accent btn-lg shadow">Learn More</a>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="py-5">
+        <div class="container">
+            <div class="row g-4">
+                <div class="col-md-4">
+                    <div class="card feature-card h-100 text-center p-4">
+                        <div class="feature-icon mb-2">
+                            <i class="bi bi-layout-text-window-reverse"></i>
+                        </div>
+                        <h5 class="card-title fw-bold">Modern Layouts</h5>
+                        <p class="card-text">Utilize the latest Bootstrap 5 grid and utility classes for pixel-perfect, responsive layouts.</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card feature-card h-100 text-center p-4">
+                        <div class="feature-icon mb-2">
+                            <i class="bi bi-palette"></i>
+                        </div>
+                        <h5 class="card-title fw-bold">Vibrant Colors</h5>
+                        <p class="card-text">Best-in-class color combinations for clarity, accessibility, and visual appeal.</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card feature-card h-100 text-center p-4">
+                        <div class="feature-icon mb-2">
+                            <i class="bi bi-phone"></i>
+                        </div>
+                        <h5 class="card-title fw-bold">Fully Responsive</h5>
+                        <p class="card-text">Seamless experience across devices—mobile, tablet, and desktop. Always looks great!</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Bootstrap JS & Icons -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
+    <style>
+        footer {
+            margin-bottom: 0;
+        }
+        body {
+            margin-bottom: 0;
+        }
+    </style>
+<!-- Newsletter Signup -->
+<section class="bg-white py-5">
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-md-7 text-center">
+                <h4 class="fw-bold mb-3">Stay Updated!</h4>
+                <p class="mb-4">Subscribe to our newsletter for the latest updates and tips.</p>
+                <form class="row g-2 justify-content-center">
+                    <div class="col-sm-8">
+                        <input type="email" class="form-control" placeholder="Enter your email" required>
+                    </div>
+                    <div class="col-sm-4">
+                        <button type="submit" class="btn btn-accent w-100">Subscribe</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- FAQ Section -->
+<section class="py-5 bg-light">
+    <div class="container">
+        <h4 class="fw-bold text-center mb-4">Frequently Asked Questions</h4>
+        <div class="accordion" id="faqAccordion">
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="faq1">
+                    <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapse1" aria-expanded="true" aria-controls="collapse1">
+                        What is Bootstrap 5?
+                    </button>
+                </h2>
+                <div id="collapse1" class="accordion-collapse collapse show" aria-labelledby="faq1" data-bs-parent="#faqAccordion">
+                    <div class="accordion-body">
+                        Bootstrap 5 is a popular open-source CSS framework for building responsive, mobile-first websites quickly and easily.
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="faq2">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse2" aria-expanded="false" aria-controls="collapse2">
+                        Is this website mobile-friendly?
+                    </button>
+                </h2>
+                <div id="collapse2" class="accordion-collapse collapse" aria-labelledby="faq2" data-bs-parent="#faqAccordion">
+                    <div class="accordion-body">
+                        Yes! The layout is fully responsive and adapts seamlessly to all devices.
+                    </div>
+                </div>
+            </div>
+       </div>
+    </div>
+    </body>
+    </html>
+</section>
+</div>
+</h2>
+</div>
+</button>
+ <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="mb-4">
+                <a href="https://github.com/" target="_blank" rel="noopener">GitHub</a> &middot;
+                <a href="about.html">About</a> &middot;
+                <a href="contact.html">Contact</a>
+            </div>
+            <small>&copy; 2025 WebCreater. All rights reserved.</small>
+        </div>
+    </footer>
+</html>

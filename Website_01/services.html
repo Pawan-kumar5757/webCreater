@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Our Services</title>
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Roboto', Arial, sans-serif;
+            background: #f7f9fb;
+            color: #222;
+        }
+        header {
+            background: #2d6cdf;
+            color: #fff;
+            padding: 2rem 0 1rem 0;
+            text-align: center;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+        }
+        header h1 {
+            margin: 0;
+            font-size: 2.5rem;
+            font-weight: 700;
+        }
+        header p {
+            margin: 0.5rem 0 0 0;
+            font-size: 1.2rem;
+            font-weight: 400;
+        }
+        .services-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 2rem;
+            padding: 3rem 1rem;
+            max-width: 1200px;
+            margin: auto;
+        }
+        .service-card {
+            background: #fff;
+            border-radius: 1rem;
+            box-shadow: 0 4px 24px rgba(44, 62, 80, 0.08);
+            padding: 2rem;
+            width: 320px;
+            transition: transform 0.2s, box-shadow 0.2s;
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .service-card:hover {
+            transform: translateY(-8px) scale(1.03);
+            box-shadow: 0 8px 32px rgba(44, 62, 80, 0.15);
+        }
+        .service-icon {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+            color: #2d6cdf;
+        }
+        .service-title {
+            font-size: 1.4rem;
+            font-weight: 700;
+            margin-bottom: 0.5rem;
+        }
+        .service-desc {
+            font-size: 1rem;
+            color: #555;
+            margin-bottom: 1.5rem;
+        }
+        .learn-more {
+            background: #2d6cdf;
+            color: #fff;
+            border: none;
+            border-radius: 2rem;
+            padding: 0.6rem 1.5rem;
+            font-size: 1rem;
+            cursor: pointer;
+            transition: background 0.2s;
+            text-decoration: none;
+            font-weight: 500;
+        }
+        .learn-more:hover {
+            background: #1849a3;
+        }
+        @media (max-width: 900px) {
+            .services-container {
+                flex-direction: column;
+                align-items: center;
+            }
+            .service-card {
+                width: 90%;
+                margin-bottom: 2rem;
+            }
+        }
+    </style>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+</head>
+<body>
+    <header>
+        <h1>Our Services</h1>
+        <p>Discover how we can help you grow and succeed</p>
+    </header>
+    <section class="services-container">
+        <div class="service-card">
+            <div class="service-icon"><i class="fas fa-laptop-code"></i></div>
+            <div class="service-title">Web Development</div>
+            <div class="service-desc">Modern, responsive websites tailored to your business needs. From landing pages to complex web apps.</div>
+            <a href="#" class="learn-more" aria-label="Learn more about Web Development">Learn More</a>
+        </div>
+        <div class="service-card">
+            <div class="service-icon"><i class="fas fa-mobile-alt"></i></div>
+            <div class="service-title">Mobile App Development</div>
+            <div class="service-desc">Custom mobile solutions for iOS and Android to engage your customers wherever they are.</div>
+            <a href="#" class="learn-more" aria-label="Learn more about Mobile App Development">Learn More</a>
+        </div>
+        <div class="service-card">
+            <div class="service-icon"><i class="fas fa-chart-line"></i></div>
+            <div class="service-title">Digital Marketing</div>
+            <div class="service-desc">Boost your online presence with SEO, social media, and targeted campaigns that deliver results.</div>
+            <a href="#" class="learn-more" aria-label="Learn more about Digital Marketing">Learn More</a>
+        </div>
+        <div class="service-card">
+            <div class="service-icon"><i class="fas fa-cloud"></i></div>
+            <div class="service-title">Cloud Solutions</div>
+            <div class="service-desc">Scalable cloud infrastructure and migration services for reliability and growth.</div>
+            <a href="#" class="learn-more" aria-label="Learn more about Cloud Solutions">Learn More</a>
+        </div>
+        <div class="service-card">
+            <div class="service-icon"><i class="fas fa-headset"></i></div>
+            <div class="service-title">24/7 Support</div>
+            <div class="service-desc">Friendly, expert support available around the clock to help you whenever you need it.</div>
+            <a href="#" class="learn-more" aria-label="Learn more about 24/7 Support">Learn More</a>
+        </div>
+        <div class="service-card">
+            <div class="service-icon"><i class="fas fa-shield-alt"></i></div>
+            <div class="service-title">Security Solutions</div>
+            <div class="service-desc">Protect your data and business with advanced security strategies and monitoring.</div>
+            <a href="#" class="learn-more" aria-label="Learn more about Security Solutions">Learn More</a>
+        </div>
+    </section>
+</body>
+</html>
